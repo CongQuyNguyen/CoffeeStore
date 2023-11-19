@@ -1,0 +1,5 @@
+﻿22110403,Nguyễn Công Quý,11/11/2004,Cà Mau,3.14,Barista
+22110404,Nguyễn Đức Sang,04/04/2004,Quảng Trị,3.5,Barista
+22110407,Lê Trường Sơn,04/07/2003,ĐakLak,2.82,Serve
+22110202,Phạm Tiến Anh,02/12/2004,Tp Hồ Chí Minh,2.85,Serve
+22110484,Nguyễn Duy Phong,04/03/2004,Cần Thơ,2.68,Serve

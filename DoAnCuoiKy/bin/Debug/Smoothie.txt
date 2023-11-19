@@ -1,0 +1,7 @@
+﻿Blueberry smoothie, 3.4
+Kiwi smoothie, 3.2
+Strawberry smoothie, 3.4
+Orange smoothie, 3.2
+Guava smoothie, 3.4
+Mulberry smoothie, 3.2
+Raspberry smoothie, 3.2

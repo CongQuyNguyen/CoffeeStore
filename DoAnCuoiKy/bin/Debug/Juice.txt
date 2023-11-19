@@ -1,0 +1,7 @@
+﻿Pineapple juice, 3.0
+Orange juice, 2.8
+Lemon juice, 2.2
+Apple juice, 2.8
+Carrot juice, 3.0
+Saboche juice, 3.0
+Mango juice, 3.0

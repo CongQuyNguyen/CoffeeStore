@@ -1,0 +1,8 @@
+﻿Mint soda, 3.2
+Blueberry soda, 3.2
+Kiwi soda, 3.0
+Strawberry soda, 3.0
+Orange soda, 3.2
+Guava soda, 3.2
+Mulberry soda, 3.0
+Raspberry soda, 3.0

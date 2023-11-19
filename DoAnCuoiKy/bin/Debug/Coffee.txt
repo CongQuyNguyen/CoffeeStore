@@ -1,0 +1,6 @@
+﻿Coffee brewed by machine, 1.8
+Black coffee, 1.8
+Filtered coffee, 2.0
+Milk coffee, 2.0
+Faint silver, 2.5
+Salt coffee, 2.5
