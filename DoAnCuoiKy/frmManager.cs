@@ -233,7 +233,29 @@ namespace DoAnCuoiKy
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                int coffeeId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["CoffeeId"].Value);
+                string query = "SELECT CoffeeId FROM Coffee WHERE Name = '" + txtCoffeeName.Text + "'";
+                SqlConnection connection = new SqlConnection(connect);
+                SqlCommand cmd = new SqlCommand(query, connection);
+                int coffeeId = 0;
+                connection.Open();
+                try
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            coffeeId = Convert.ToInt32(reader["CoffeeId"]);
+                        }
+                    }
+                    MessageBox.Show(coffeeId.ToString());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                connection.Close();
+
+                // int coffeeId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["CoffeeId"].Value);
                 string name = txtCoffeeName.Text;
                 int quantity = Convert.ToInt32(txtQuantity.Text);
                 double price = Convert.ToDouble(txtPrice.Text);
@@ -307,20 +329,27 @@ namespace DoAnCuoiKy
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // AddCoffee();
-            AddStaff();
+            AddCoffee();
+            // AddStaff();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            // DeleteCoffee();
-            DeleteStaff();
+            DeleteCoffee();
+            // DeleteStaff();
         }
 
         private void btnChange_Click(object sender, EventArgs e)
         {
-            // ChangeCoffee();
-            ChangeStaff();
+            ChangeCoffee();
+            // ChangeStaff();
         }
+
+        #region
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        #endregion
     }
 }

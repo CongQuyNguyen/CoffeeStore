@@ -33,8 +33,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnViewReport = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.rbtnItem = new System.Windows.Forms.RadioButton();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblBirthday = new System.Windows.Forms.Label();
+            this.rbtnStaff = new System.Windows.Forms.RadioButton();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNamePerson = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
@@ -59,8 +61,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.rbtnStaff = new System.Windows.Forms.RadioButton();
-            this.rbtnItem = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -103,6 +103,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(683, 466);
             this.panel1.TabIndex = 4;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dataGridView2
             // 
@@ -156,6 +157,18 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // rbtnItem
+            // 
+            this.rbtnItem.AutoSize = true;
+            this.rbtnItem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnItem.ForeColor = System.Drawing.Color.SteelBlue;
+            this.rbtnItem.Location = new System.Drawing.Point(23, 245);
+            this.rbtnItem.Name = "rbtnItem";
+            this.rbtnItem.Size = new System.Drawing.Size(14, 13);
+            this.rbtnItem.TabIndex = 46;
+            this.rbtnItem.TabStop = true;
+            this.rbtnItem.UseVisualStyleBackColor = true;
+            // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
@@ -177,6 +190,18 @@
             this.lblBirthday.Size = new System.Drawing.Size(62, 16);
             this.lblBirthday.TabIndex = 42;
             this.lblBirthday.Text = "Birthday";
+            // 
+            // rbtnStaff
+            // 
+            this.rbtnStaff.AutoSize = true;
+            this.rbtnStaff.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnStaff.ForeColor = System.Drawing.Color.SteelBlue;
+            this.rbtnStaff.Location = new System.Drawing.Point(23, 267);
+            this.rbtnStaff.Name = "rbtnStaff";
+            this.rbtnStaff.Size = new System.Drawing.Size(14, 13);
+            this.rbtnStaff.TabIndex = 45;
+            this.rbtnStaff.TabStop = true;
+            this.rbtnStaff.UseVisualStyleBackColor = true;
             // 
             // lblEmail
             // 
@@ -435,30 +460,6 @@
             this.label4.Size = new System.Drawing.Size(58, 19);
             this.label4.TabIndex = 32;
             this.label4.Text = "Logout";
-            // 
-            // rbtnStaff
-            // 
-            this.rbtnStaff.AutoSize = true;
-            this.rbtnStaff.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnStaff.ForeColor = System.Drawing.Color.SteelBlue;
-            this.rbtnStaff.Location = new System.Drawing.Point(23, 267);
-            this.rbtnStaff.Name = "rbtnStaff";
-            this.rbtnStaff.Size = new System.Drawing.Size(14, 13);
-            this.rbtnStaff.TabIndex = 45;
-            this.rbtnStaff.TabStop = true;
-            this.rbtnStaff.UseVisualStyleBackColor = true;
-            // 
-            // rbtnItem
-            // 
-            this.rbtnItem.AutoSize = true;
-            this.rbtnItem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnItem.ForeColor = System.Drawing.Color.SteelBlue;
-            this.rbtnItem.Location = new System.Drawing.Point(23, 245);
-            this.rbtnItem.Name = "rbtnItem";
-            this.rbtnItem.Size = new System.Drawing.Size(14, 13);
-            this.rbtnItem.TabIndex = 46;
-            this.rbtnItem.TabStop = true;
-            this.rbtnItem.UseVisualStyleBackColor = true;
             // 
             // frmManager
             // 
